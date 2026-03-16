@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Foodio Frontend 
 
-## Getting Started
+The elegant client-side interface for the **Foodio** platform. Designed with a premium "Coffee & Cream" aesthetic, this **Next.js** application provides a seamless experience for food discovery and ordering.
 
-First, run the development server:
+---
 
+## Design & Experience
+- **Theme:** Refined "Coffee & Cream" UI palette.
+- **Animations:** Fluid micro-interactions powered by **Framer Motion**.
+- **State Management:** Real-time cart updates and persistent sessions via **Zustand**.
+- **Responsive:** Fully optimized for mobile, tablet, and desktop views.
+
+---
+
+##  Installation & Setup
+
+### 1. Install Dependencies
 ```bash
+npm install
+2. Environment Configuration
+Create a .env.local file in the root of the foodio-frontend directory:
+
+Code snippet
+# URL of your running NestJS backend
+NEXT_PUBLIC_API_URL=http://localhost:5000
+3. Run the Development Server
+Bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser to view the application.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tech Stack
+Framework: Next.js 14+ (App Router)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Styling: Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+State: Zustand
 
-## Learn More
+Icons: Lucide React
 
-To learn more about Next.js, take a look at the following resources:
+Animations: Framer Motion
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Key Features
+Dynamic Cart: Add, remove, and adjust quantities with instant price calculations.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Role-Based Views: Specialized layouts for Users and Administrators.
 
-## Deploy on Vercel
+Protected Routes: Secure navigation ensures sensitive pages are only accessible to authenticated users.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Quick-Admin Access: Integrated shortcut for reviewers to access the dashboard.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Build for Production
+Bash
+npm run build
+npm run start
+License
+This project is part of the Foodio Fullstack application.
+
+
+---
+
+### Final Push to GitHub
+Now that both the root, backend, and frontend READMEs are perfect, run this final sync in your terminal:
+
+```powershell
+git add .
+git commit -m "docs: complete professional documentation for all modules"
+git push origin main
