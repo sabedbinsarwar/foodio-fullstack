@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-green: #1D352F;
+  --accent-cream: #FDF8F0;
+}
+
+body {
+  color: var(--primary-green);
+  background-color: #ffffff;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: 'Playfair Display', serif; /* Ensure you import this in layout.tsx */
+}
